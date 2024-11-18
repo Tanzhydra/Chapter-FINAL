@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+    <style>
+      a-scene {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene physics>
+      <!-- Model GLTF dengan animasi -->
+      <a-gltf-model src="Wolf-Blender-2.82a.glb" position="0 1.5 -3" animation-mixer dynamic-body></a-gltf-model>
+
+      <!-- Objek fisika tambahan -->
+      <a-box position="0 2 -5" dynamic-body></a-box>
+      <a-plane position="0 0 -5" rotation="-90 0 0" static-body></a-plane>
+
+      <!-- Interaksi tangan -->
+      <a-entity id="hand" super-hands></a-entity>
+    </a-scene>
+  </body>
+</html>
