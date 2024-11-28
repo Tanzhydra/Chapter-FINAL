@@ -1,2 +1,2 @@
-Muhammad Fatan Makhsani
-5323600059
+Nama : Muhammad Fatan Makhsani
+NRP  : 5323600059
